@@ -66,6 +66,13 @@
     color: #333;
     font-size: 16px;
 }
+.input-group span {
+    position: absolute;
+    bottom: 12px;
+    right: 17px;
+    font-size: 14px;
+    color: red;
+}
 ::placeholder{
     font-size: 14px;
 }
@@ -80,4 +87,8 @@ form button{
     cursor: pointer;
     display: block;
     margin: 30px auto 10px;
+}
+
+#submit-error {
+    color: red;
 }
