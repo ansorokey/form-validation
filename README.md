@@ -9,6 +9,7 @@ This project was made by following [How To Make Form Validation Using JavaScript
 - Validations
 - Regex
 - Font Awesome
+- Event Listeners
 
 ## How To Use
 Enter information in the fields provided. When the input passes the validations the field expects, a checkmark will appear. An error message will be displayed otherwise.
