@@ -28,7 +28,7 @@ function validateName() {
         return false;
     }
 
-    nameError.innerHTML = <i class="fa-solid fa-circle-check"></i>;
+    nameError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
     return true;
 }
 
@@ -54,7 +54,7 @@ function validatePhone() {
         return false;
     }
 
-    phoneError.innerHTML = <i class="fa-solid fa-circle-check"></i>;
+    phoneError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
     return true;
 }
 
@@ -76,12 +76,14 @@ function validateEmail() {
         // [@] - one '@' symbol
         // [\.] - one dot
         // [a-z]{2,4} - 2, 3, or 4 characters from a-z
-    if(!email.match(/^[A-Za-z]\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+        // having some trouble getting this email validation to work
+    // if(!email.match(/^[A-Za-z]\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+    if(!email.match(/^[A-Za-z]*[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}/)){
         emailError.innerHTML = 'Invalid email';
         return false;
     }
 
-    emailError.innerHTML = <i class="fa-solid fa-circle-check"></i>;
+    emailError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
     return true;
 }
 
@@ -95,7 +97,7 @@ function validateMessage() {
         return false;
     }
 
-    messageError.innerHTML = <i class="fa-solid fa-circle-check"></i>;
+    messageError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
 }
 
 function validateForm() {
